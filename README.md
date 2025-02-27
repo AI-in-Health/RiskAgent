@@ -125,7 +125,7 @@ python evaluate_riskagent.py \
 ```
 
 
-## Run_demo
+## Quick Start
 
 We provide a demo for the risk agent pipeline, which can be found at `evaluate/riskagent_demo.ipynb`.
 
@@ -152,3 +152,9 @@ print("\n=== Final Assessment ===")
 print(results['final_output'])
 
 ```
+
+### Acknowledgement
+
+The Llama Family Models: [Open and Efficient Foundation Language Models](https://ai.meta.com/llama/)
+
+LLaMA-Factory: [Unified Efficient Fine-Tuning of 100+ Language Models](https://github.com/hiyouga/LLaMA-Factory/tree/main)
