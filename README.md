@@ -19,12 +19,9 @@ Each Instance in the dataset contains the following information:
 - `inputs`: the input parameters for the tool calculation (human readable format)
 - `inputs_raw`: the input parameters for the tool calculation (raw format)
 
-
-We also provide the training data with the format of instruction-following data, this can be found at `data/fine_tune/ft_data.zip`.
-
 ## Train
 
-The training data is in the `train` folder, which is implemented based on LLaMA-Factory. We did lora fine-tuning with our constructed instrution-follwoing data. The training data can be found at `train/ift_data`. 
+We also provide the training data with the format of instruction-following data, this can be found at `data/fine_tune/ft_data.zip`. 
 
 The trained model can be found at:
 
@@ -34,6 +31,15 @@ The trained model can be found at:
 | [RiskAgent-3B](https://huggingface.co/jinge13288/RiskAgent-3B)                 | 3B                           | [Llama-3.2-3B-Instruct](https://huggingface.co/meta-llama/Llama-3.2-3B-Instruct)         |
 | [RiskAgent-8B](https://huggingface.co/jinge13288/RiskAgent-8B)                 | 3B                           | [Meta-Llama-3-8B-Instruct](https://huggingface.co/meta-llama/Meta-Llama-3-8B-Instruct)         |
 
+The model was trained with the following hypermeters:
+
+cutoff_len: 3096<br>
+num_train_epochs: 5<br>
+learning_rate: 1.0e-4<br>
+warnup_ratio: 0.1<br>
+batch_size: 32<br>
+finetuning_type: lora<br>
+Prior to utilizing our model, please ensure you have obtained the Llama licensing and access rights to the Llama model.
 
 ## Installation
 Install necessary packages:
