@@ -2,7 +2,7 @@
 
 ## MedRisk Dataset
 
-MedRisk is made up with two version: 
+MedRisk is made up with two version (also available on [huggingface](https://huggingface.co/datasets/jinge13288/MedRisk-Bench)): 
 
 - MedRisk-Quantity: `data/MedRisk-Quantity.xlsx`
 - MedRisk-Qualitative: `data/MedRisk-Qualitative.xlsx`
@@ -39,6 +39,7 @@ learning_rate: 1.0e-4<br>
 warnup_ratio: 0.1<br>
 batch_size: 32<br>
 finetuning_type: lora<br>
+
 Prior to utilizing our model, please ensure you have obtained the Llama licensing and access rights to the Llama model.
 
 ## Installation
@@ -121,4 +122,33 @@ python evaluate_riskagent.py \
     --api_base YOUR_AZURE_ENDPOINT \
     --output_dir ./riskagent_gpt4o_quantity \
     --split test
+```
+
+
+## Run_demo
+
+We provide a demo for the risk agent pipeline, which can be found at `evaluate/riskagent_demo.ipynb`.
+
+This supports report summary of risk prediction by a given patient information using RiskAgent model with just a simple setup.
+
+```
+from riskagent_pipeline import RiskAgentPipeline
+
+pipeline = RiskAgentPipeline(
+    model_type="llama3",
+    model_path="jinge13288/RiskAgent-8B", 
+    device_map="cuda:0",
+    verbose=True
+)
+
+test_case = """
+A 54-year-old female patient with a history of hypertension and diabetes presents to the clinic complaining of palpitations and occasional light-headedness. Her medical record shows a previous stroke but no history of congestive heart failure or vascular diseases like myocardial infarction or peripheral artery disease.
+"""
+
+results = pipeline.process_case(test_case)
+
+
+print("\n=== Final Assessment ===")
+print(results['final_output'])
+
 ```
