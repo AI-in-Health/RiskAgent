@@ -29,7 +29,7 @@ The trained model can be found at:
 | ----------------------------------------------------------------- | -------------------------------- | ---------------- |
 | [RiskAgent-1B](https://huggingface.co/jinge13288/RiskAgent-1B)                 | 1B                          | [Llama-3.2-1B-Instruct](https://huggingface.co/meta-llama/Llama-3.2-1B-Instruct)         |
 | [RiskAgent-3B](https://huggingface.co/jinge13288/RiskAgent-3B)                 | 3B                           | [Llama-3.2-3B-Instruct](https://huggingface.co/meta-llama/Llama-3.2-3B-Instruct)         |
-| [RiskAgent-8B](https://huggingface.co/jinge13288/RiskAgent-8B)                 | 3B                           | [Meta-Llama-3-8B-Instruct](https://huggingface.co/meta-llama/Meta-Llama-3-8B-Instruct)         |
+| [RiskAgent-8B](https://huggingface.co/jinge13288/RiskAgent-8B)                 | 8B                           | [Meta-Llama-3-8B-Instruct](https://huggingface.co/meta-llama/Meta-Llama-3-8B-Instruct)         |
 
 The model was trained with the following hypermeters:
 
