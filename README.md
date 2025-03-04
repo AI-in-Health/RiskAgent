@@ -60,14 +60,6 @@ The trained model can be found at:
 | [RiskAgent-8B](https://huggingface.co/jinge13288/RiskAgent-8B)                 | 8B                           | [Meta-Llama-3-8B-Instruct](https://huggingface.co/meta-llama/Meta-Llama-3-8B-Instruct)         |
 | [RiskAgent-70B] Comming soon!                 | 70B                           | [Meta-Llama-3-70B-Instruct](https://huggingface.co/meta-llama/Meta-Llama-3-70B-Instruct)         |
 
-The model was trained with the following hypermeters:
-
-cutoff_len: 3096<br>
-num_train_epochs: 5<br>
-learning_rate: 1.0e-4<br>
-warnup_ratio: 0.1<br>
-batch_size: 32<br>
-finetuning_type: lora<br>
 
 Prior to utilizing our model, please ensure you have obtained the Llama licensing and access rights to the Llama model.
 
