@@ -19,7 +19,7 @@
     
 ## 🚀 Quick Start
 
-We provide a simple demo for the risk agent pipeline, which can be found at `evaluate/riskagent_demo.ipynb`.
+We provide a simple demo for the risk agent pipeline, which can be found at `evaluate/riskagent_demo.ipynb` and `evaluate/riskagent_demo_auto.ipynb`.
 
 This supports report summary of risk prediction by a given patient information using RiskAgent model with just a simple setup.
 
@@ -54,6 +54,13 @@ print(results['final_output'])
 
 ```
 
+Note: If using the MDCal API for risk calculation fails multiple times, you can refer to [`evaluate/riskagent_demo_auto.ipynb`](https://github.com/AI-in-Health/RiskAgent/blob/main/evaluate/riskagent_demo_auto.ipynb) to use the auto mode or local mode with the provided textual risk formulation to calculate the risk scores.
+
+API mode: better accuracy, slower speed 
+
+Local mode: better speed, lower accuracy
+
+Auto mode: a balance between speed and accuracy
 
 ### Option 2: Using Local Model
 
