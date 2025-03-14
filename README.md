@@ -58,7 +58,7 @@ Note: If using the MDCal API for risk calculation fails multiple times, you can 
 
 **API mode**: Use the MDCal API for online risk calculation only (better calculation)
 
-**Local mode**: Use GPT-4o for stable risk calculation only based on locally pre-stored formulations (stable calculation)
+**Local mode**: Use GPT-4o for stable risk calculation based on locally pre-stored formulations only (stable calculation)
 
 **Auto mode**: Automatically switches between API mode and Local mode (a balance between better and stable calculation)
 
