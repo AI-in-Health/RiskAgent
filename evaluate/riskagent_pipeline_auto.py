@@ -220,7 +220,7 @@ class RiskAgentPipeline:
         api_endpoint: Optional[str] = None,
         deployment: Optional[str] = None,
         tool_library: str = "../data/tool_library.xlsx",
-        tool_mode: str = "auto",  # fetch, local, auto
+        tool_mode: str = "auto",  # API, local, auto
         verbose: bool = False
     ):
         
@@ -244,8 +244,8 @@ class RiskAgentPipeline:
         
         # Validate tool_mode
         self.tool_mode = tool_mode.lower()
-        if self.tool_mode not in ["fetch", "local", "auto"]:
-            raise ValueError(f"Unsupported tool mode: {tool_mode}. Must be one of: fetch, local, auto")
+        if self.tool_mode not in ["API", "local", "auto"]:
+            raise ValueError(f"Unsupported tool mode: {tool_mode}. Must be one of: API, local, auto")
         
         self.model_type = model_type.lower()
         if self.model_type not in ["azure", "openai", "llama3"]:
@@ -461,7 +461,7 @@ Result format example:
         """Calculate risk score based on tool_mode"""
         try:
             # Choose calculation method based on different modes
-            if self.tool_mode == "fetch":
+            if self.tool_mode == "API":
                 # Use API calculation only
                 result = calculate_from_url(str(tool_id), params)
                 
