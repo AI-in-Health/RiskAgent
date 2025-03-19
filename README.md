@@ -16,7 +16,13 @@
 
 
 <h5 align="center">
-    
+
+
+## TO DO
+ - Training Data and Training script
+ - External Evaluation on MEDCALC-BENCH
+ - ...
+
 ## 🚀 Quick Start
 
 We provide a simple demo for the risk agent pipeline, which can be found at `evaluate/riskagent_demo.ipynb` and `evaluate/riskagent_demo_auto.ipynb`.
