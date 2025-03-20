@@ -21,6 +21,7 @@
 ## TO DO
  - Training Data and Training script
  - External Evaluation on MEDCALC-BENCH
+ - RiskAgent-70B
  - ...
 
 ## 🚀 Quick Start
