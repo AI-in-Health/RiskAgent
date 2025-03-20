@@ -60,14 +60,6 @@ print(results['final_output'])
 
 ```
 
-Note: If using the MDCal API for risk calculation fails multiple times, you can refer to [`evaluate/riskagent_demo_auto.ipynb`](https://github.com/AI-in-Health/RiskAgent/blob/main/evaluate/riskagent_demo_auto.ipynb) to use the auto mode or local mode with the provided textual risk formulation to calculate the risk scores.
-
-**API mode**: Use the MDCal API for online risk calculation only (better calculation)
-
-**Local mode**: Use GPT-4o for stable risk calculation based on locally pre-stored formulations only (stable calculation)
-
-**Auto mode**: Automatically switches between API mode and Local mode (a balance between better and stable calculation)
-
  
 ### Option 2: Using Local Model
 
